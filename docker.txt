@@ -83,3 +83,21 @@ Docker-machine ls で一覧を表示
 
 Dockerホストの作成のしかた
 Docker-machine create —driver  virtualbox ＜作成するホストの名前＞
+
+
+ネットワークからコンテナを切断する方法
+Docker network disconnect <ネットワーク名>　<コンテナ名>
+
+-p　コマンドを指定することで外部から接続することが可能
+
+Docker-machineホストのIPアドレスの確認方法
+Docker-machine ip <ホスト名>
+
+
+DOCKER_HOST=tcp://192.168.99.103:2376
+
+Dockerのデータ管理
+
+・volume
+Volumeのファイルの作成の仕方
+Docker volume create <ファイル名>
